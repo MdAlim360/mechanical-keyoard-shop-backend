@@ -23,7 +23,7 @@ app.use(cors({
 // application routes
 app.use('/api', router);
 
-app.get('/create-products', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
     res.send('Hi Next Level Developer !');
 });
 

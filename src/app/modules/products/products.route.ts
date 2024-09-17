@@ -5,7 +5,7 @@ import express from 'express'
 
 const router = express.Router();
 
-router.post('/',
+router.post('/create-products',
     validateRequest(productsValidation.productValidationSchema),
     productController.createProducts)
 router.get('/',
