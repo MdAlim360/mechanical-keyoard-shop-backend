@@ -15,7 +15,7 @@ const app: Application = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'], // Allow both origins
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://mechanical-keyboard-shop-phi.vercel.app'], // Allow both origins
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
